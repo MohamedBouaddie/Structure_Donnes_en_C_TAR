@@ -1,0 +1,80 @@
+*Travail à rendre  *
+
+Exercice 1  
+Écrire une fonction qui prend en paramètre un entier et renvoie son code binaire.  
+
+Exercice 2  
+Écrire une fonction qui prend en paramètre un entier \( n \) saisi au clavier, alloue un tableau de \( n \) éléments initialisés à \( 100 \times i \mod 87 \), et retourne ses \( n \) éléments.  
+
+Exercice 3  
+Écrire une fonction qui prend en paramètre un tableau d’entiers, son nombre d’éléments \( n \) et un entier \( m \), et qui retourne le nombre d'occurrences de cet élément \( m \) dans le tableau, ou 0 s’il n’existe pas.  
+
+Exercice 4  
+Écrire une fonction qui prend en paramètre une chaîne de caractères et un caractère donné, et renvoie le nombre d'occurrences de ce caractère dans la chaîne.  
+
+Exercice 5  
+Écrire un programme qui crée un pointeur de pointeurs de type int.  
+✔ Déterminer le nombre de lignes de pointeurs.  
+✔ Déterminer le nombre de colonnes de chaque ligne de pointeurs.  
+✔ Remplir et afficher les éléments de ce pointeur.  
+✔ Libérer ce pointeur.  
+✔ Traiter le cas pour \( N \) lignes fixes et \( M \) colonnes variables.  
+
+Exercice 6 
+Écrire un programme qui crée un pointeur de pointeurs de type char.  
+✔ Déterminer le nombre de phrases.  
+✔ Déterminer le nombre de caractères de chaque phrase.  
+✔ Remplir et afficher les éléments de ce pointeur.  
+✔ Libérer ce pointeur.  
+✔ Traiter le cas pour \( N \) lignes fixes et \( M \) colonnes variables.  
+
+Exercice 7 
+Écrire deux programmes qui gèrent le classement des équipes d’un championnat donné en utilisant les tableaux ou les pointeurs. Ces programmes doivent permettre :  
+✔ La saisie des noms et des scores de chaque équipe.  
+✔ La détermination du classement des équipes de football (nombre d’équipes = 20).  
+✔ L’affichage du classement, avec un exemple pour cinq équipes.  
+
+
+
+Exercice 8
+Soit la fonction \( f \) définie par :  
+\[ f(x) = x^2 + 4x + 1 \text{ avec } x \in \mathbb{D}^* \]
+
+1. a) Écrire une fonction qui prend en paramètre un tableau des \( x \) et sa taille (Max 10), et qui retourne un tableau des \( f(x) \).  
+2. b) Écrire le programme principal qui saisit tous les \( x \) et affiche les \( f(x) \).
+
+
+Exercice 9
+Écrire un programme qui permet la saisie et l'affichage des informations de plusieurs articles (struct Articles) :  
+- Code : Code de l'article.  
+- Titre : Titre de l'article.  
+- Auteur : Auteur de l'article.  
+- Éditeur : Nom du journal.  
+- Volume : Numéro du volume.  
+- Date_Pub : Date de publication.
+
+
+
+Exercice 10
+En se référant à l'exercice 8, créer la structure StructTab suivante qui contient :  
+- L’adresse d’un tableau des moyennes.  
+- L’adresse d’un tableau des notes.  
+- L’adresse d’un tableau des coefficients de ces notes.  
+- Le nombre d'éléments du tableau.
+
+Définition de la structure :
+c
+typedef struct{
+    int nbElem;
+    int *tabNotes;
+    int *tabCoeff;
+    int *tabMoy;
+} StructTab;
+
+
+
+Exercice 11
+Écrire un programme en langage C qui déclare un modèle d’une structure nommée Student , contenant les champs suivants :  
+- Nom : Tableau de 20 éléments de type char.  
+- Note : Pointeur sur \( N \) notes de type float.  
+- Moy : Pointeur sur \( N \) moyennes de type float.  
